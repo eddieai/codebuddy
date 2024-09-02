@@ -66,6 +66,11 @@
         },
         {
           "when": "editorHasSelection",
+          "command": "ola.generate",
+          "group": "CodeBuddy"
+        },
+        {
+          "when": "editorHasSelection",
           "command": "ola.sendChatMessage",
           "group": "CodeBuddy"
         },
@@ -123,6 +128,10 @@
       {
         "command": "ola.explain",
         "title": "CodeBuddy. Explain this code"
+      },
+      {
+        "command": "ola.generate",
+        "title": "CodeBuddy. Generate code for selected code"
       },
       {
         "command": "ola.savePattern",

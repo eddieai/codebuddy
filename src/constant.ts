@@ -6,6 +6,7 @@ export enum OLA_ACTIONS {
   optimize = "ola.codeOptimize",
   fix = "ola.codeFix",
   explain = "ola.explain",
+  generate = "ola.generate",
   pattern = "ola.savePattern",
   knowledge = "ola.readFromKnowledgeBase",
   commitMessage = "ola.generateCommitMessage",

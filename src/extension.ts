@@ -8,6 +8,7 @@ import {
 } from "./constant";
 import { Comments } from "./events/comment";
 import { ExplainCode } from "./events/explain";
+import { GenerateCode } from "./events/generate";
 import { FileUploader } from "./events/file-uploader";
 import { FixError } from "./events/fixError";
 import { CodeChartGenerator } from "./events/generate-code-chart";
@@ -44,6 +45,7 @@ export async function activate(context: vscode.ExtensionContext) {
       optimize,
       fix,
       explain,
+      generate,
       pattern,
       knowledge,
       commitMessage,
@@ -66,6 +68,10 @@ export async function activate(context: vscode.ExtensionContext) {
     const explainCode = new ExplainCode(
       `${USER_MESSAGE} explains the code...`,
       context,
+    );
+    const generateCode = new GenerateCode(
+        `${USER_MESSAGE} generates the code...`,
+        context,
     );
     const generateReview = new ReviewCode(
       `${USER_MESSAGE} reviews the code...`,
@@ -108,6 +114,7 @@ export async function activate(context: vscode.ExtensionContext) {
           errorMessage,
         ).execute(errorMessage),
       [explain]: () => explainCode.execute(),
+      [generate]: () => generateCode.execute(),
       [pattern]: () => codePattern.uploadFileHandler(),
       [knowledge]: () => knowledgeBase.execute(),
       [commitMessage]: () => generateCommitMessage.execute("hello"),
