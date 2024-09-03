@@ -323,6 +323,7 @@ export abstract class EventGenerator implements IEventGenerator {
   }
 
   async execute(errorMessage?: string): Promise<void> {
+    vscode.commands.executeCommand('chatView.focus');
     const response = (await this.generateResponse(errorMessage)) as string;
     if (!response) {
       vscode.window.showErrorMessage("model not reponding, try again later");
