@@ -90,7 +90,6 @@ switch (fontFamily) {
 export const chatCss: string = `
 #chat-container {
     width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
