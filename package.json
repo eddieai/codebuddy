@@ -37,8 +37,20 @@
         }
       ]
     },
+    "submenus": [
+      {
+        "id": "ola.submenu",
+        "label": "CodeBuddy"
+      }
+    ],
     "menus": {
       "editor/context": [
+        {
+          "submenu": "ola.submenu",
+          "group": "CodeBuddy"
+        }
+      ],
+      "ola.submenu": [
         {
           "when": "editorHasSelection",
           "command": "ola.commentCode",
