@@ -225,7 +225,7 @@ div.code {
     position: relative;
     margin-bottom: 5px;
   }
-  
+
   #knowledge-base-title::after {
     content: "Upload your knowledge base or code pattern (txt)";
     position: absolute;
@@ -242,7 +242,7 @@ div.code {
     transition: opacity 0.3s, visibility 0.3s;
     white-space: nowrap;
   }
-  
+
   #knowledge-base-title:hover::after {
     opacity: 1;
     visibility: visible;
@@ -258,7 +258,7 @@ div.code {
     boder-color: white;
     border-radius: 50%;
     font-family: selectedFontFamily;
-    content: "\f0d7"; 
+    content: "\f0d7";
     width: 40px;
     height: 35px;
     display: flex;
@@ -291,7 +291,13 @@ div.code {
     font-weight: bold;
 }
 
-.copy-code-button {
+.code-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.copy-code-button,
+.wrap-code-button {
     background-color: #444;
     color: #fff;
     border: none;
@@ -300,7 +306,8 @@ div.code {
     border-radius: 4px;
 }
 
-.copy-code-button:hover {
+.copy-code-button:hover,
+.wrap-code-button:hover {
     background-color: #666;
 }
 

@@ -84,7 +84,7 @@ function addCodeWrappers() {
       wrapper.className = 'code-wrapper';
       const header = document.createElement('div');
       header.className = 'code-header';
-      header.innerHTML = \`<span class="code-language">\${assistant}</span><button class="copy-code-button">Copy</button>\`;
+      header.innerHTML = \`<span class="code-language">\${assistant}</span><div class="code-buttons"><button class="wrap-code-button">Wrap</button><button class="copy-code-button">Copy</button></div>\`;
       preElement.parentNode.insertBefore(wrapper, preElement);
       wrapper.appendChild(header);
       wrapper.appendChild(preElement);
@@ -95,6 +95,16 @@ function addCodeWrappers() {
             header.querySelector('.copy-code-button').innerText = 'Copy';
           }, 2000);
         });
+      });
+      header.querySelector('.wrap-code-button').addEventListener('click', () => {
+        if (preElement.style.whiteSpace === 'pre-wrap') {
+            preElement.style.whiteSpace = 'pre';
+        } else {
+            preElement.style.whiteSpace = 'pre-wrap';
+            preElement.style.wordWrap = 'break-word';
+            preElement.style.paddingLeft = '2em';
+            preElement.style.textIndent = '-2em';
+        }
       });
     }
   });
