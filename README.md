@@ -2,7 +2,7 @@
 
 CodeBuddy is a Visual Studio Code extension that provides an AI-powered coding assistant to help developers write better code more efficiently. With CodeBuddy, you can get intelligent code suggestions, completions, and assistance based on the context and requirements of your code.
 
-## Install in Vscode Market Place
+## This extension is a fork of
 https://marketplace.visualstudio.com/items?itemName=fiatinnovations.ola-code-buddy
 
 ## Roadmap
@@ -68,7 +68,7 @@ Highlight any code and right-click. You should see a list of options for refacto
 - Support for multiple chat view themes, fonts and font size
 
 ### 1.1.1
-  
+
 - Support for Auto-Generated Code Commit Messages, Knowledgebase, Unit Test Generation, copy and auto-Scroll to bottom of Chat, Interview me.
 
 ### 1.1.2

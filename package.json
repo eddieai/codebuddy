@@ -1,12 +1,10 @@
 {
-  "name": "ola-code-buddy",
-  "displayName": "CodeBuddy: Your AI Coding Assistant",
+  "name": "code-buddy-groq-gemini-claude",
+  "displayName": "CodeBuddy: Your AI Coding Assistant | Groq | Gemini | Claude",
   "author": {
-    "name": "Oyinlola Olasunkanmi Raymond",
-    "email": "oyinolasunkanmi@gmail.com",
-    "url": "https://fiatinnovations.com"
+    "name": "AI Dev"
   },
-  "publisher": "fiatinnovations",
+  "publisher": "DiAi",
   "description": "",
   "version": "1.1.6",
   "engines": {
@@ -14,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/olasunkanmi-SE/codebuddy"
+    "url": "https://github.com/eddieai/codebuddy"
   },
   "gallery": {
     "icon": "codebuddy.png"
